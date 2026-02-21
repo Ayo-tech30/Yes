@@ -64,15 +64,6 @@ const MENU_TEXT = `
 ┃ .groupstats / .gs
 ┗━━━━━━━━━━━━━❥❥❥
 
-┏━「 👑 ᴏᴡɴᴇʀ ᴏɴʟʏ 」
-┃ .sudo <number>
-┃ .removesudo <number>
-┃ .listsudo
-┃ .ban @user
-┃ .unban @user
-┃ .join <link>
-┗━━━━━━━━━━━━━❥❥❥
-
 ┏━「 💰 ᴇᴄᴏɴᴏᴍʏ 」
 ┃ .moneybalance / .mbal
 ┃ .gems
@@ -207,17 +198,6 @@ const MENU_TEXT = `
 ┃ .uno
 ┗━━━━━━━━━━━━━❥❥❥
 
-┏━「 👑 ᴏᴡɴᴇʀ 」
-┃ .sudo add [number]
-┃ .sudo remove [number]
-┃ .sudo list
-┃ .ban @user
-┃ .unban @user
-┃ .join [link]
-┃ .exit
-┃ .spawncard [message]
-┗━━━━━━━━━━━━━❥❥❥
-
 ┏━「 🎵 ᴍᴜꜱɪᴄ 」
 ┃ .play [song name / url]
 ┗━━━━━━━━━━━━━❥❥❥
@@ -274,7 +254,7 @@ module.exports = {
     const userName = msg.pushName || sender.split('@')[0];
     const menuText = MENU_TEXT.replace('{user}', userName);
 
-    const imgPath = path.join(__dirname, '../../assets/delta.jpg');
+    const imgPath = path.join(__dirname, '../../assets/22ed309e3b7af45682d8ac0923bb4ab8.jpg');
 
     if (fs.existsSync(imgPath)) {
       const imgBuffer = fs.readFileSync(imgPath);
